@@ -58,7 +58,7 @@ namespace GaffarovaAlbina.Models
         }
         public Assignment SetDone(Assignment assignment)
         {
-            assignment.Done = true;
+            assignment.Done = !assignment.Done;
             return assignment;
         }
         public Assignment SetAttempt(Assignment assignment, Attempt attempt)

@@ -68,14 +68,14 @@ namespace GaffarovaAlbina.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime>("DateCreate")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("Deadline")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("Done")
                         .HasColumnType("bit");
-
-                    b.Property<DateTime>("DateCreate")
-                        .HasColumnType("datetime2");
 
                     b.Property<long?>("ProtocolId")
                         .HasColumnType("bigint");
@@ -131,10 +131,15 @@ namespace GaffarovaAlbina.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
+                    b.Property<long?>("HeadID")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HeadID");
 
                     b.ToTable("Protocols");
                 });
@@ -142,6 +147,9 @@ namespace GaffarovaAlbina.Migrations
             modelBuilder.Entity("GaffarovaAlbina.Models.Executor", b =>
                 {
                     b.HasBaseType("GaffarovaAlbina.Models.Account");
+
+                    b.Property<string>("Position")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SecondName")
                         .HasColumnType("nvarchar(max)");
@@ -188,6 +196,15 @@ namespace GaffarovaAlbina.Migrations
                         .HasForeignKey("ExecutorID");
 
                     b.Navigation("Executor");
+                });
+
+            modelBuilder.Entity("GaffarovaAlbina.Models.Protocol", b =>
+                {
+                    b.HasOne("GaffarovaAlbina.Models.Executor", "Head")
+                        .WithMany()
+                        .HasForeignKey("HeadID");
+
+                    b.Navigation("Head");
                 });
 
             modelBuilder.Entity("GaffarovaAlbina.Models.Assignment", b =>

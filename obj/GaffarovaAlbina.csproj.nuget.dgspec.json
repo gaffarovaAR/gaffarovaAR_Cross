@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Кросс\\LR2\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj": {}
+    "C:\\Users\\User\\Desktop\\Кросс\\LR2\\Gaffarova_LR2_Cross\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Кросс\\LR2\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj": {
+    "C:\\Users\\User\\Desktop\\Кросс\\LR2\\Gaffarova_LR2_Cross\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Кросс\\LR2\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Кросс\\LR2\\Gaffarova_LR2_Cross\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj",
         "projectName": "GaffarovaAlbina",
-        "projectPath": "C:\\Users\\User\\Desktop\\Кросс\\LR2\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Кросс\\LR2\\Gaffarova_LR2_Cross\\GaffarovaAlbina\\GaffarovaAlbina\\GaffarovaAlbina.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Кросс\\LR2\\GaffarovaAlbina\\GaffarovaAlbina\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Кросс\\LR2\\Gaffarova_LR2_Cross\\GaffarovaAlbina\\GaffarovaAlbina\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -139,7 +139,7 @@ namespace GaffarovaAlbina.Controllers
         }
 
         // PUT: api/Attempts/5/SetComment
-        [HttpPut("{id}/SetComment")]
+        [HttpPut("{id}/SetComment/{comment}")]
         [Authorize(Roles = "admin")]
         public async Task<ActionResult<AttemptVM>> PutAttemptComment(long id, string comment)
         {

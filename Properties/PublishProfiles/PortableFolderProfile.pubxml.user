@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\User\Desktop\Кросс\LR2\LR2_Git\Gaffarova_LR2_Cross\GaffarovaAlbina\GaffarovaAlbina\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2021-03-30T23:03:55.4081980Z;</History>
+  </PropertyGroup>
+</Project>

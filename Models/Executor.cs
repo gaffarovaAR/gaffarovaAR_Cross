@@ -7,6 +7,7 @@ namespace GaffarovaAlbina.Models
         public string ThirstName { get; set; }
         public string SecondName { get; set; }
         public string ThirdName { get; set; }
+        public string Position { get; set; }
         public List<Assignment> Assignments { get; set; }
 
         public Executor() : base() { }
@@ -15,6 +16,7 @@ namespace GaffarovaAlbina.Models
             ThirstName = executorDTO.ThirstName;
             SecondName = executorDTO.SecondName;
             ThirdName = executorDTO.ThirdName;
+            Position = executorDTO.Position;
             Login = executorDTO.Login;
             Password = executorDTO.Password;
             Role = "user";
@@ -26,6 +28,7 @@ namespace GaffarovaAlbina.Models
         public string ThirstName { get; set; }
         public string SecondName { get; set; }
         public string ThirdName { get; set; }
+        public string Position { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
     }
@@ -36,6 +39,7 @@ namespace GaffarovaAlbina.Models
         public string ThirstName { get; set; }
         public string SecondName { get; set; }
         public string ThirdName { get; set; }
+        public string Position { get; set; }
         public int AmountAssig { get; set; }
 
         public ExecutorVM() { }
@@ -45,6 +49,7 @@ namespace GaffarovaAlbina.Models
             ThirstName = executor.ThirstName;
             SecondName = executor.SecondName;
             ThirdName = executor.ThirdName;
+            Position = executor.Position;
             if (executor.Assignments != null && executor.Assignments.Count != 0 )
                 AmountAssig = executor.Assignments.Count;
             else

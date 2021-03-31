@@ -13,6 +13,7 @@
     <WebStackScaffolding_DbContextTypeFullName>GaffarovaAlbina.Models.DocumentContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <ActiveDebugProfile>GaffarovaAlbina</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\User\Desktop\Кросс\LR2\LR2_Git\Gaffarova_LR2_Cross\GaffarovaAlbina\GaffarovaAlbina\Properties\PublishProfiles\PortableFolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

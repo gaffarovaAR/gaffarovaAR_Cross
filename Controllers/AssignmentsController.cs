@@ -324,7 +324,6 @@ namespace GaffarovaAlbina.Controllers
         public async Task<ActionResult<AssignmentVM>> PutDoneAssignment(long id)
         {
             Assignment assignment = _manager.SetDone(await _context.Assignments.FindAsync(id));
-            assignment.Done = !assignment.Done;
 
             _context.Entry(assignment).State = EntityState.Modified;
 

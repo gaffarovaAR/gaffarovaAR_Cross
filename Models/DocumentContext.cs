@@ -12,6 +12,8 @@ namespace GaffarovaAlbina.Models
                 Entry(ass).Collection(_ => _.Executors).Load();
             foreach (var ass in Assignments)
                 Entry(ass).Collection(_ => _.History).Load();
+            foreach (var prot in Protocols)
+                Entry(prot).Reference(_ => _.Head).Load();
         }
 
         public DbSet<Protocol> Protocols { get; set; }

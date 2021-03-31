@@ -69,7 +69,11 @@ namespace GaffarovaAlbina.Controllers
                     assignments.Add(assignment);
             }
 
-            Protocol protocol = new Protocol(protocolDTO, assignments);
+            Executor head = await _context.Executors.FindAsync(protocolDTO.HeadID);
+            if (head == null)
+                return NotFound(new { errorText = $"Head with id = {protocolDTO.HeadID} was not found." });
+
+            Protocol protocol = new Protocol(protocolDTO, assignments, head);
             protocol.Id = id;
 
             _context.Entry(protocol).State = EntityState.Modified;
@@ -114,7 +118,11 @@ namespace GaffarovaAlbina.Controllers
                     assignments.Add(assignment);
             }
 
-            Protocol protocol = new Protocol(protocolDTO, assignments);
+            Executor head = await _context.Executors.FindAsync(protocolDTO.HeadID);
+            if (head == null)
+                return NotFound(new { errorText = $"Head with id = {protocolDTO.HeadID} was not found." });
+
+            Protocol protocol = new Protocol(protocolDTO, assignments, head);
 
             _context.Protocols.Add(protocol);
             await _context.SaveChangesAsync();

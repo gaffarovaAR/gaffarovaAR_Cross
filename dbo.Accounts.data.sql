@@ -1,1 +1,1 @@
-﻿insert into [dbo].[Accounts](Login, Password, Role, Discriminator) values('alb@mail.ru', '123456789', 'admin', 'Account');
+﻿insert into [dbo].[Accounts](Login, Password, Role, Discriminator, ThirstName, SecondName, ThirdName, Position) values('frolova@mail.ru', 'f12f12', 'user', 'Executor', 'Frolova','Inna','Vadimovna', 'main specialist');
